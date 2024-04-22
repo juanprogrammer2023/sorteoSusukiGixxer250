@@ -51,7 +51,8 @@ array.forEach((index) => {
 
     boleta.addEventListener('click',()=>{
         numeroBoleta=boleta.innerText
-        let url='/datos.html?boleta='+encodeURIComponent(numeroBoleta)
+        
+        let url='https://juanprogrammer2023.github.io/sorteoSuzukiGixxer250/datos.html?boleta='+encodeURIComponent(numeroBoleta)
         window.location.href=url
         boleta.style.backgroundColor='#0000FF'
     })
