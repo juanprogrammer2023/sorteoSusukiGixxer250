@@ -1,0 +1,194 @@
+#array {
+    
+    margin-left: 10%;
+     margin-right: 10%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+}
+
+header img{
+    margin-top: -2%;
+    width: 100%;
+}
+
+/* Estilos para cada boleta */
+.boleta {
+    border-radius: 10px;
+    width: calc(25% - 20px); /* Aproximadamente 10 elementos por fila */
+    margin: 10px;
+    padding: 10px;
+    box-sizing: border-box;
+    border: 1px solid #ccc;
+    text-align: center;
+    background-color: #F2CB57;
+    font-size: medium;
+    
+}
+
+.boleta:hover{
+    background-color: white;
+}
+
+body{
+    background-color: #B4D9D5;
+}
+
+#premios{
+    
+    align-items: center;
+    display: flex;
+    justify-content: center;
+
+}
+
+#premios p {
+    font-family: "Lilita One", sans-serif;
+    font-size: 15px; /* Tamaño de fuente */
+    color: #333; /* Color de texto */
+    text-align: center; /* Alineación central del texto */
+    margin-bottom: 20px; /* Margen inferior */
+    border-radius: 8px; /* Borde redondeado */
+    transition: transform 0.2s ease-in-out, background-color 0.2s ease-in-out; /* Transiciones suaves */
+    width:20% ;
+}
+
+/* Estilo para el primer párrafo */
+#premios p:first-child {
+    font-weight: bold; /* Texto en negrita */
+    font-size: 20px; /* Tamaño de fuente más grande */
+    color: #4CAF50; /* Color verde */
+}
+
+/* Estilo para el segundo párrafo */
+#premios p:last-child {
+    font-style: italic; /* Texto en cursiva */
+    font-size: 20px; /* Tamaño de fuente */
+    color: #FF5722; /* Color naranja */
+}
+
+/* Efecto al pasar el mouse sobre los párrafos */
+#premios p:hover {
+    transform: translateY(-3px); /* Desplazamiento hacia arriba al pasar el mouse */
+    background-color: #e9e9e9; /* Cambio de color de fondo */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Sombra más pronunciada */
+    cursor: pointer; /* Cambiar cursor a pointer */
+}
+
+#premios img{
+    width: 50%;
+}
+
+/* Efecto al pasar el mouse sobre los párrafos */
+#premios p:hover {
+    transform: translateY(-5px); /* Desplazar hacia arriba */
+    background-color: #388E3C; /* Cambiar a un tono más oscuro de verde */
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2); /* Sombra más pronunciada */
+}
+
+#moto:hover {
+    transform: scale(1.05); /* Escalar ligeramente al pasar el mouse */
+}
+
+
+#premios {
+    text-align: center; /* Centra el contenido de premios horizontalmente */
+    padding: 20px;
+}
+
+#premios p {
+    font-size: 24px; /* Tamaño de fuente para el texto de los premios */
+    margin-bottom: 10px; /* Espacio inferior entre los párrafos */
+}
+
+#moto {
+    max-width: 100%; /* Asegura que la imagen de la moto se ajuste al ancho del contenedor */
+    height: auto; /* Permite que la altura se ajuste automáticamente */
+}
+
+@media screen and (max-width: 768px) {
+    /* Estilos para pantallas más pequeñas (hasta 768px de ancho) */
+  #premios{
+    flex-direction: column;
+  }
+
+    #premios p {
+        font-size: 18px; /* Reduce el tamaño de la fuente para dispositivos más pequeños */
+       
+    }
+}
+
+
+#premios {
+    text-align: center;
+    padding: 20px;
+}
+
+#premios p {
+    font-size: 24px;
+    margin-bottom: 10px;
+    animation: scaleAnimation 1.5s ease-in-out infinite alternate; /* Aplica la animación al contenido de premios */
+
+}
+
+#moto {
+    max-width: 100%;
+    height: auto;
+}
+
+@media screen and (max-width: 768px) {
+    #premios {
+        padding: 10px;
+    }
+
+    #premios p {
+        font-size: 18px;
+    }
+}
+
+/* Definición del keyframe de animación */
+@keyframes scaleAnimation {
+    0% {
+        transform: scale(1); /* Escala normal (sin cambio) al inicio */
+    }
+    50% {
+        transform: scale(1.1); /* Escala al 110% a la mitad de la animación */
+    }
+    100% {
+        transform: scale(1); /* Vuelve a la escala normal al final */
+    }
+}
+
+.banner{
+    display: flex;
+    justify-content: center;
+    gap: 10%;
+}
+
+button {
+    margin-bottom: 2%;
+    position: relative;
+    background: transparent;
+    cursor: pointer;
+    outline-offset: 4px;
+    transition: filter 250ms;
+    user-select: none;
+    touch-action: manipulation;
+    font-size: 1.1rem;
+    color: white;
+    box-shadow: 10px 10px 4px rgba(0, 0, 0, 0.3);
+    background: #F2CB57;
+    border-radius: 12px;
+    padding: 12px 27px;
+    border: 3px solid black;
+  }
+  
+  button:hover {
+    filter: brightness(110%);
+  }
+  
+  button:active {
+    transform: translateY(2px);
+    transition: transform 34ms;
+  }
+  

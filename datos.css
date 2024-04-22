@@ -1,0 +1,335 @@
+/* Estilos generales */
+
+body {
+    background-color: #b4d9d5;
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+header img {
+    width: 100%;
+}
+
+.contenedor {
+    padding: 10%;
+    display: flex;
+    justify-content: center;
+    border-radius: 10px;
+    gap: 10%;
+    margin: 0 auto; /* Centra el contenedor horizontalmente */
+}
+
+.parrafo {
+    font-family: "Imprima", sans-serif;
+    width: 100%; /* Ocupa todo el ancho disponible */
+    margin-bottom: 20px;
+}
+
+.formulario {
+    width: 100%; /* Ocupa todo el ancho disponible */
+    background-color: #f9f9f9;
+    padding: 5%;
+    border-radius: 8px;
+    box-sizing: border-box; /* Incluye el padding en el tamaño total */
+}
+
+h4 {
+    font-size: 24px;
+    color: #333333;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+label {
+    display: block;
+    font-size: 14px;
+    color: #555555;
+    margin-bottom: 8px;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="number"] {
+    width: 100%;
+    padding: 10px;
+    font-size: 14px;
+    border: 1px solid #dddddd;
+    border-radius: 5px;
+    margin-bottom: 15px;
+    box-sizing: border-box; /* Incluye el padding en el tamaño total */
+    outline: none; /* Elimina el contorno al hacer focus */
+}
+
+input::placeholder {
+    color: #999999;
+}
+
+input[type="button"] {
+    background-color: #5c9ded;
+    color: #ffffff;
+    padding: 12px 20px;
+    font-size: 16px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+input[type="button"]:hover {
+    background-color: #4682b4;
+}
+
+/* Estilos específicos para dispositivos móviles */
+
+@media screen and (max-width: 900px) {
+    .contenedor {
+        flex-direction: column;
+    }
+    .container {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .formulario {
+        width: 100%; /* Ocupa todo el ancho en dispositivos móviles */
+    }
+    .motocicleta{
+        width: 70%;
+        margin-right: 5%;
+    }
+    .motocicleta img{
+        width: 100%;
+    }
+    .cinco .uno{
+        justify-content: center;
+    }
+
+    .containe{
+        width: 80%;
+        margin-right: 15%;
+    }
+}
+
+#titulo{
+    font-size: 200%;
+    font-family: "Lilita One", sans-serif;
+    text-align: center;
+}
+
+.container{
+    gap: 5%;
+    display: flex;
+    justify-content: center;
+    align-items:center;
+    color:#efb810 ;
+    row-gap: 10%;
+}
+
+.figura{
+    
+    width: 80%;
+    height: 100px;
+    background: red;
+    border-radius: 100px 100px 0px 0px ;
+    color: white;
+    align-items: center;
+    justify-content: center;
+    padding: 13%;
+    text-align: center;
+    display: flex;
+    font-family: "Lilita One", sans-serif;
+    font-size: 50px;
+    
+}
+
+.motocicleta{
+    align-items: center;
+}
+
+h5{
+    margin-top: -13%;
+    font-size: 20px;
+    color: white;
+    text-align: center;
+
+}
+h1 {
+    font-size: 60px; /* Tamaño de la fuente */
+    font-weight: bold; /* Texto en negrita */
+
+    /* Estilos de texto */
+    color: gold; /* Color dorado */
+    text-shadow: 
+        2px 2px 4px rgba(0, 0, 0, 0.3),
+        4px 4px 6px rgba(0, 0, 0, 0.2);
+
+    padding: 20px;
+    background-image: linear-gradient(to right, gold, orange); /* Gradiente de fondo */
+    border: 4px solid white; 
+    border-radius: 10px; 
+    box-shadow: 0 12px 20px rgba(0, 0, 0, 0.1);
+
+    /* Estilos de diseño */
+    text-align: center; /* Centrar el texto */
+    margin: 20px; /* Margen exterior */
+}
+.parent {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .child {
+    width: 50px;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transform-style: preserve-3d;
+    transition: all 0.5s ease-in-out;
+    border-radius: 50%;
+    margin: 0 5px;
+  }
+  
+  .child:hover {
+    background-color: white;
+    background-position: -100px 100px, -100px 100px;
+    transform: rotate3d(0.5, 1, 0, 30deg);
+    transform: perspective(180px) rotateX(60deg) translateY(2px);
+    box-shadow: 0px 10px 10px rgb(1, 49, 182);
+  }
+  
+  button {
+    border: none;
+    background-color: transparent;
+    font-size: 20px;
+  }
+  
+  .button:hover {
+    width: inherit;
+    height: inherit;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transform: translate3d(0px, 0px, 15px) perspective(180px) rotateX(-35deg) translateY(2px);
+    border-radius: 50%;
+  }
+.contenedor {
+    width: 60%;
+    background-color: #f5f5f5;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.containe {
+    height: 100%;
+    width: 100%;
+
+  }
+  
+  .hero {
+    padding: 0px 20px;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #f7f7f7;
+  }
+  
+  .form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-size: 1rem;
+  }
+  
+  .input {
+    padding: 1rem 1.2rem;
+    margin: 1rem;
+    border-radius: 2rem;
+    display: block;
+    width: 80%;
+    border: none;
+    box-shadow: inset 6px 6px 8px rgba(97, 97, 97, 0.075),
+      6px 6px 6px rgba(255, 255, 255, 0.781);
+    outline: none;
+    background-color: inherit;
+    color: rgb(161, 161, 161);
+    font-size: inherit;
+    font-weight: bold;
+  }
+  
+  .submit , .btn {
+    margin-top: 20px;
+    font-weight: bold;
+    box-shadow: -3px -3px 5px white, 3px 3px 5px rgba(209, 209, 209, 0.705);
+    color: rgb(112, 112, 112);
+    cursor: pointer;
+  }
+  
+  .btn {
+    text-align: center;
+    color: black;
+  }
+  
+  .logo {
+    font-size: 3rem;
+    color: black;
+    font-weight: 600;
+    margin: 30px;
+  }
+  
+  ::placeholder {
+    color: rgb(161, 161, 161);
+  }
+  
+  .forgotten {
+    text-align: center;
+    font-size: .8rem;
+    width: 80%;
+    color: gray;
+    margin: 15px 0;
+  }
+  
+  a {
+    color: inherit;
+    font-weight: bold;
+    text-decoration: none;
+  }
+  
+  .or {
+    position: relative;
+    font-weight: bold;
+    color: rgb(112, 112, 112);
+  }
+  
+  .or::before , .or::after {
+    position: absolute;
+    content: '';
+    width: 700%;
+    height: 1px;
+    top: 50%;
+    margin: 0 6px;
+    background-color: rgba(0, 0, 0, 0.479);
+  }
+  
+  .or::before {
+    right: 100%;
+  }
+  
+  
+  .signup {
+    color: gray;
+    margin-top: 15px;
+    font-size: 1rem;
+  }
