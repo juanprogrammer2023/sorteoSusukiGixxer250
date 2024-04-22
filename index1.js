@@ -3,6 +3,6 @@ const moto=document.getElementById('moto')
 const botonBoleta=document.getElementById('botonBoleta')
 
 botonBoleta.addEventListener('click',()=>{
-window.location.href = "sorteoSusukiGixxer250/boletas.html";
+window.location.href = "https://juanprogrammer2023.github.io/sorteoSuzukiGixxer250/boletas.html";
 
 })
